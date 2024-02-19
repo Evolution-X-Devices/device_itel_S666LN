@@ -82,6 +82,9 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,true)
 # Graphics
 TARGET_USES_VULKAN := true
 
+# Graphics
+TARGET_USES_VULKAN := true
+
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
 LOCAL_KERNEL := $(KERNEL_PATH)/Image.gz
