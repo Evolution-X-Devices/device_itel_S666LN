@@ -201,7 +201,6 @@ ro.hardware.paytrigger=trustonic
 # Power
 persist.vendor.powerhal.thermal_ux_temp_max=55000
 persist.vendor.powerhal.thermal_ux_temp_min=43000
-ro.vendor.perf.scroll_opt=true
 ro.vendor.powerhal.cloud=1
 ro.vendor.powerhal.encode=1
 ro.vendor.powerhal.thermal_ux_support=1
