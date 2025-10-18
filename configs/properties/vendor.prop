@@ -27,6 +27,7 @@ vendor.usbsph.srcaws.pcm.dump=0
 vendor.usbsph.ul.pcm.dump=0
 
 # Bluetooth
+bluetooth.device_id.vendor_id=0x0046
 bluetooth.profile.sap.server.enabled=true
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
