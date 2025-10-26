@@ -1,9 +1,9 @@
 ## s666ln package version: S666LN-MA66BABCDEFLMNQ-T-OP-250516V1582, unless stated otherwise
 
 # APU
--vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
--vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
--vendor/etc/vintf/manifest/manifest_apuware_utils.xml
+vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
+vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
+vendor/etc/vintf/manifest/manifest_apuware_utils.xml
 vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareHmpServer.so
 vendor/lib64/APUWareUtilsServer.so
@@ -1352,7 +1352,7 @@ vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
--vendor/etc/vintf/manifest/manifest_hwcomposer.xml
+vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/VideoLog_dynamic.xml
 vendor/etc/meow.cfg
@@ -1421,7 +1421,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
@@ -1432,12 +1432,12 @@ vendor/lib64/libwvhidl.so
 lib/libem_support_jni.so
 lib64/libem_support_jni.so
 priv-app/EngineerMode/EngineerMode.apk:priv-app/EngineerMode/EngineerMode.apk
--vendor/bin/em_hidl
+vendor/bin/em_hidl
 vendor/etc/init/em_hidl_user.rc
--vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
--vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
--vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
--vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -1445,7 +1445,7 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/vendor.fpsensor.rc
 vendor/etc/init/vendor.goodix.rc
 vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
--vendor/etc/vintf/manifest/manifest_chipone.xml
+vendor/etc/vintf/manifest/manifest_chipone.xml
 vendor/lib64/hw/fpsensor_fingerprint.default.so
 vendor/lib64/hw/gf_fingerprint.default.so;DISABLE_CHECKELF
 vendor/lib64/libfp_ext_svc2.so
@@ -1598,8 +1598,8 @@ vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.gps_pwr.rc
 vendor/etc/init/mtk_agpsd_p.rc
--vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
--vendor/etc/vintf/manifest/gnss@2.1-service.xml
+vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
+vendor/etc/vintf/manifest/gnss@2.1-service.xml
 vendor/etc/slp_conf
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
@@ -1625,9 +1625,9 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service.trustonic
 vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
--vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
--vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
--vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
 
 # Media
 vendor/bin/mt6789/v3avpud.mt6789;SYMLINK=vendor/bin/v3avpud
@@ -1731,7 +1731,7 @@ vendor/lib64/libpn557_fw.so
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
 vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 vendor/etc/armnn_app.config
 vendor/etc/nnapi_powerhal.json
 vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so;SYMLINK=vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so
