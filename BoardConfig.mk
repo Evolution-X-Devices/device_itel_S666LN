@@ -77,7 +77,7 @@ TARGET_SCREEN_DENSITY := 292
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/devices/platform/charger/tran_aichg_disable_charger)
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,true)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,true)
 
 # Graphics
 TARGET_USES_VULKAN := true
