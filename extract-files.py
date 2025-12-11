@@ -23,6 +23,7 @@ namespace_imports = [
     'device/itel/S666LN',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
+    'hardware/mediatek/libaedv',
     'hardware/millennium',
 ]
 
