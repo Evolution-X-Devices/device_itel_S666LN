@@ -1,9 +1,5 @@
 ## s666ln package version: S666LN-MA66BABCDEFLMNQ-T-OP-250516V1582, unless stated otherwise
 
-# AEE
-vendor/lib/libaedv.so
-vendor/lib64/libaedv.so
-
 # APU
 -vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
 -vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
