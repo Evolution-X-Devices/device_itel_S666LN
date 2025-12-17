@@ -38,11 +38,6 @@ debug.sf.predict_hwc_composition_strategy=0
 ro.opengles.version=196610
 vendor.debug.sf.display_dejitter=0
 
-# IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
 # Kernel
 ro.kernel.zio=38,108,105,16
 ro.iorapd.enable=false
@@ -59,21 +54,6 @@ persist.sys.radio.force_lte_ca=true
 ro.vendor.mtk_telephony_add_on_policy=0
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
-
-# SurfaceFlinger
-debug.sf.auto_latch_unsignaled=false
-debug.sf.early.app.duration=20000000
-debug.sf.early.sf.duration=27600000
-debug.sf.earlyGl.app.duration=20000000
-debug.sf.earlyGl.sf.duration=27600000
-debug.sf.enable_gl_backpressure=0
-debug.sf.enable_transaction_tracing=false
-debug.sf.hwc.min.duration=23000000
-debug.sf.latch_unsignaled=true
-debug.sf.late.app.duration=20000000
-debug.sf.late.sf.duration=27600000
-debug.sf.predict_hwc_composition_strategy=0
-debug.sf.use_phase_offsets_as_durations=1
 
 # Wifi
 mediatek.wlan.ctia=0

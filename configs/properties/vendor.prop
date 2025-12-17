@@ -9,12 +9,12 @@ persist.vendor.audiohal.p2w_dump_on=0
 persist.vendor.audiohal.pcm_mixer_dump_on=0
 persist.vendor.rm.debug.headsetmic=1
 persist.vendor.rm.debug.phonemic=1
-ro.audio.monitorRotation=true
 ro.config.vc_call_vol_steps=11
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.vendor.mtk_hifiaudio_support=1
+ro.audio.monitorRotation=true
 vendor.audio.powerhal.power.dl=true
 vendor.audio.powerhal.power.ul=true
 vendor.streamin.pcm.dump=0
@@ -96,11 +96,14 @@ ro.hardware.gatekeeper=trustonic
 
 # Graphics
 debug.cpurend.vsync=false
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.skia_use_perfetto_track_events=false
+debug.mediatek.disp_decompress=1
+debug.renderengine.backend=skiaglthreaded
 debug.graphics.game_default_frame_rate.disabled=true
 debug.mediatek.appgamepq_compress=1
-debug.mediatek.disp_decompress=1
+debug.sf.disable_client_composition_cache=1
 graphics.gpu.profiler.support=true
-persist.vendor.sys.mtkaal.function=0
 ro.hardware.egl=meow
 ro.hardware.gralloc=common
 ro.hardware.hwcomposer=mtk_common
@@ -112,6 +115,8 @@ ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
 service.sf.prime_shader_cache=0
+persist.vendor.sys.mtkaal.function=0
+
 
 # GPS
 ro.vendor.gps.chrdev=gps_drv_stp
@@ -123,54 +128,41 @@ ro.vendor.mtk_log_hide_gps=0
 ro.incremental.enable=yes
 
 # HWUI
-debug.hwui.target_cpu_time_percent=60
 debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=60
 ro.hwui.render_ahead=20
 debug.sf.enable_adpf_cpu_hint=true
 
 # HWComposer
-ro.vendor.composer_version=2.3
 ro.vendor.mtk_backlight_hwc_support=0
+ro.vendor.composer_version=2.3
 
 # Keymaster
 ro.vendor.keymaster_version=5.0
 
-# Keystore
-ro.hardware.kmsetkey=trustonic
-
 # Light
 ro.vendor.transsion.backlight_12bit=1
 
-# LMK
-ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=150
-ro.lmk.swap_free_low_percentage=20
-ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit=30
+# LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.use_psi=true
+ro.lmk.use_minfree_levels=false
 ro.lmk.thrashing_limit_decay=50
+ro.lmk.downgrade_pressure=30
 
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.vendor.iomanager.support=1
-ro.vendor.jpeg_decode_sw_opt=1
 ro.vendor.mtk.c2.vdec.fmt.support.level=1
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.media.heif.feature.off=1
 vendor.media.heif.highThreshold=20
 vendor.mtk.vdec.waitkeyframeforplay=9
-
-# Mediatek
-ro.vendor.mediatek.platform=MT6789
-ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
-ro.vendor.mediatek.version.release=alps-mp-s0.mp1-V15.175_reallytek_wsr_s0mp1rc_P26
-ro.vendor.mgk_name=mgk_64_entry_level_k510
-ro.vendor.mgvi_name=mgvi_64_nfc_armv82
-
-# Memory
-ro.vendor.mm.defrag.support=1
+ro.vendor.jpeg_decode_sw_opt=1
+vendor.media.omx=0
 
 # Misc
 persist.vendor.factory.GB2312=no
@@ -205,9 +197,9 @@ ro.vendor.powerhal.thermal_ux_support=1
 ro.vendor.powerhal_fling_mode_support=1
 
 # Power
+vendor.powerhal.interaction.offset=0
 vendor.powerhal.interaction.max=150
 vendor.powerhal.interaction.min=50
-vendor.powerhal.interaction.offset=0
 
 # PQ
 ro.vendor.mtk_pq_color_mode=1
@@ -296,6 +288,7 @@ telephony.active_modems.max_count=2
 remote_provisioning.connect_timeout_millis=2000
 remote_provisioning.enable_rkpd=true
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
+remote_provisioning.connect_timeout_millis=2000
 
 # Sensor
 ro.vendor.init.sensor.rc=init.sensor_2_0.rc
@@ -358,6 +351,8 @@ vendor.debug.sf.cpupolicy.xgf_min=25
 external_storage.casefold.enabled=1
 external_storage.projid.enabled=1
 external_storage.sdcardfs.enabled=0
+ro.vendor.mtk_dmc_support=1
+ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_f2fs_enable=1
 ro.vendor.mtk_ufs_support=1
 
@@ -366,19 +361,13 @@ ro.soc.manufacturer=MediaTek
 ro.soc.model=MT6789V/CD
 
 # TEE
-ro.mtk_key_manager_support=1
-ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_trustonic_tee_support=1
 
 # Thermal
-ro.vendor.mtk_thermal_2_0=1
 ro.vendor.tran.hbm.thermal-patch=/devices/platform/thermal-ntc1
 ro.vendor.tran.hbm.thermal.temp.clr=42000
 ro.vendor.tran.hbm.thermal.temp.trig=44000
-
-# Vibrator
-ro.vendor.tran.vibrator.option=single
 
 # Wifi
 persist.vendor.mtk_wfc_support=1
