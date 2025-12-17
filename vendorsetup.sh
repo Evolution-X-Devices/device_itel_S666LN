@@ -13,3 +13,7 @@ if [ $RET -ne 0 ]; then
 else
   echo "OK: All patched"
 fi
+
+deviceDir=$(gettop)/device/itel/S666LN
+
+${deviceDir}/applypatch.sh ${deviceDir}/patches
