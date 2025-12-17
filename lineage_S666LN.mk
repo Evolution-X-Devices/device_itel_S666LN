@@ -25,7 +25,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-transsion
 PRODUCT_SYSTEM_NAME := S666LN-OP
 PRODUCT_SYSTEM_DEVICE := S666LN
     
-BUILD_FINGERPRINT := Itel/S666LN-OP/itel-S666LN:13/TP1A.220624.014/240513V902:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="sys_tssi_64_armv82_itel-user 13 TP1A.220624.014 607469 release-keys" \
+    BuildFingerprint=Itel/S666LN-OP/itel-S666LN:13/TP1A.220624.014/240513V1350:user/release-keys \
+    DeviceProduct=S666LN-OP \
+    DeviceName=itel-S666LN
 
 # Time
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
