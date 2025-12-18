@@ -5,7 +5,7 @@
 #
 
 DEVICE_PATH := device/itel/S666LN
-KERNEL_PATH := $(DEVICE_PATH)-kernel
+KERNEL_PATH := kernel/itel/S666LN
 
 # Architecture
 TARGET_ARCH := arm64
