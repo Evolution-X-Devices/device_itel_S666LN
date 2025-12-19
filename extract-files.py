@@ -21,9 +21,9 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/itel/S666LN',
+    'device/itel/S666LN/libaedv'
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
-    'hardware/mediatek/libaedv',
     'hardware/millennium',
 ]
 

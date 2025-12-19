@@ -459,9 +459,9 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    device/itel/S666LN/libaedv \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-    hardware/mediatek/libaedv \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/millennium
