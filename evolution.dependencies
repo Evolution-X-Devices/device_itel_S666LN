@@ -20,18 +20,22 @@
     "branch": "sixteen"
   },
   {
-    "repository": "packages_apps_ViPER4AndroidFX",
-    "target_path": "packages/apps/ViPER4AndroidFX",
-    "branch": "bka"
-  },
-  {
     "repository": "device_mediatek_sepolicy_vndr",
-    "target_path": "device/mediatek/sepolicy_vndr",
-    "branch": "bka"
+    "target_path": "device/mediatek/sepolicy_vndr"
   },
   {
     "repository": "MillenniumOSS/android_hardware_mediatek",
     "target_path": "hardware/mediatek",
+    "remote": "github-non-los",
+    "branch": "sixteen"
+  },
+  {
+    "repository": "hardware_dolby",
+    "target_path": "hardware/dolby"
+  },
+  {
+    "repository": "MillenniumOSS/android_vendor_JamesDSP",
+    "target_path": "vendor/JamesDSP",
     "remote": "github-non-los",
     "branch": "sixteen"
   }
