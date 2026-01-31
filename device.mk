@@ -468,6 +468,7 @@ PRODUCT_SOONG_NAMESPACES += \
     device/itel/S666LN/libaedv \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
+    hardware/mediatek/wlan/wifi_hal \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/millennium
